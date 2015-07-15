@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://markdalgleish.github.io/presentation-build-wars-gulp-vs-grunt/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Workflow Tips</title>
+	<link href="css/fonts.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet"  type="text/css">
+  </head>
+  <body>
+	<article class="bespoke-parent">
+
+<section class="bespoke-slide bespoke-active">
+	<h1><b>Workflow Tips</b></h1>
+	<p>For WordPress Theme Developers</p>
+	<h3><a href="https://twitter.com/aaronrutley">@aaronrutley</a></h3>
+	<img src="images/profile.jpg" class="avatar avatar--small">
+</section>
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+	<h6>Tip #1</h6>
+	<h2>Create a <b>starter</b> repo</h2>
+</section>
+
+<section class="bespoke-slide">
+		<p>my <b>starter</b> repo</p>
+		<img src="images/repo-1.png" width="100%" height="auto" />
+</section>
+<section class="bespoke-slide">
+		<p>Include <b>plugins</b> used on local &amp; production</p>
+		<img src="images/repo-2.png" width="100%" height="auto" />
+</section>
+<section class="bespoke-slide">
+		<p>Include your <b>starter theme</b></p>
+		<img src="images/repo-3.png" width="100%" height="auto" />
+</section>
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h6>Tip #2</h6>
+<h2>Create a <b>local dev</b> plugin</h2>
+</section>
+
+
+<section class="bespoke-slide">
+		<p>Admin bar <b>before</b></p>
+		<img src="images/local-1.png" width="100%" height="auto" />
+</section>
+
+<section class="bespoke-slide">
+		<p>Admin bar <b>after</b></p>
+		<img src="images/local-2.png" width="100%" height="auto" />
+</section>
+
+<section class="bespoke-slide">
+<p>My local <b>wp-config</b></p>
+<pre class="language-php"><code>define('LOCAL_URL', 'http://mysite.dev.au');
+define('REMOTE_URL', 'http://mysite.com.au');
+define('LOCAL_LIVE_RELOAD', true);
+define('LOCAL_IMAGE_PROXY', true);</code></pre>
+
+<a href="https://github.com/AaronRutley/wp-local-dev">https://github.com/AaronRutley/wp-local-dev</a>
+</section>
+
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h6>Tip #3</h6>
+<h2>Switch to <b>VVV</b></h2>
+<p>(varying vagrant vagrants)</p>
+</section>
+
+
+<section class="bespoke-slide">
+		<p><b>VVV</b> project on GitHub</p>
+		<img src="images/vvv-1.png" width="100%" height="auto" />
+		<a href="https://github.com/Varying-Vagrant-Vagrants/VVV">https://github.com/Varying-Vagrant-Vagrants/VVV</a>
+</section>
+
+<section class="bespoke-slide">
+		<p>VV <b>Site Wizard</b></p>
+		<img src="images/vvv-2.png" width="100%" height="auto" />
+		<a href="https://github.com/bradp/vv">https://github.com/bradp/vv</a>
+</section>
+<section class="bespoke-slide">
+		<p>VVV <b>dashboard</b></p>
+		<img src="images/vvv-3.png" width="100%" height="auto" />
+		<a href="https://github.com/leogopal/VVV-Dashboard">https://github.com/leogopal/VVV-Dashboard</a>
+</section>
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h2>More reasons to use <b>VVV</b></h2>
+<p>Ideal for lots of small projects</p>
+<p>Blueprint feature</p>
+<p>WP-CLI built in</p>
+<p>phpMyAdmin built in</p>
+<p>Auto backup DBs on halt</p>
+</section>
+
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h6>Tip #4</h6>
+<h2>Use <b>Migrate DB Pro</b></h2>
+</section>
+
+<section class="bespoke-slide">
+		<p>Takes care of the <b>serialised data</b></p>
+		<img src="images/mdbpro-1.png" width="100%" height="auto" />
+		<a href="https://deliciousbrains.com/wp-migrate-db-pro/">https://deliciousbrains.com/wp-migrate-db-pro/</a>
+
+</section>
+
+<section class="bespoke-slide">
+		<p>Easily <b>pull</b> a database down</p>
+		<img src="images/mdbpro-2.png" width="100%" height="auto" />
+</section>
+
+<section class="bespoke-slide">
+		<p>Easily <b>push</b> a database up</p>
+		<img src="images/mdbpro-3.png" width="100%" height="auto" />
+</section>
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h6>Tip #5</h6>
+<h2>Checkout <b>Dash</b></h2>
+</section>
+
+<section class="bespoke-slide">
+		<p>offline <b>docs</b> for WordPress</p>
+		<img src="images/dash-1.png" width="100%" height="auto" />
+		<a href="https://kapeli.com/dash">https://kapeli.com/dash</a>
+</section>
+
+<section class="bespoke-slide">
+		<p>offline <b>docs</b> for everything</p>
+		<img src="images/dash-2.png" width="100%" height="auto" />
+</section>
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h6>Tip #6</h6>
+<h2>Deploy via <b>GIT</b></h2>
+</section>
+
+<section class="bespoke-slide">
+		<p>Beanstalk</p>
+		<img src="images/deploy-1.png" width="100%" height="auto" />
+		<a href="http://beanstalkapp.com">beanstalkapp.com</a>
+</section>
+
+<section class="bespoke-slide">
+		<p>Deploy HQ</p>
+		<img src="images/deploy-2.png" width="100%" height="auto" />
+		<a href="http://">deployhq.com</a>
+</section>
+
+<section class="bespoke-slide">
+		<p>Deploy Bot</p>
+		<img src="images/deploy-3.png" width="100%" height="auto" />
+		<a href="http://deploybot.com">deploybot.com</a>
+</section>
+
+<section class="bespoke-slide">
+		<p>Via a WP PLugin : GitHub Updater</p>
+		<img src="images/deploy-4.png" width="100%" height="auto" />
+		<a href="http://github.com/afragen/github-updater">github.com/afragen/github-updater</a>
+</section>
+
+<section class="bespoke-slide">
+		<p>Send deployment notifications to <b>Slack</b></p>
+		<img src="images/deploy-5.png" width="100%" height="auto" />
+		<a href="http://slack.com">slack.com</a>
+</section>
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h6>Tip #7</h6>
+<h2>Automate <b>Git</b></h2>
+</section>
+
+<section class="bespoke-slide">
+<p>$ gc </p>
+<pre class="language-php">
+<code>#pseudocode
+	git status -s
+	git add --all :/
+	read commit_message
+	git commit -am "$commit_message"
+	git push
+</code></pre>
+<a href="http://aaronrutley.com/handy-git-aliases/">aaronrutley.com/handy-git-aliases</a>
+</section>
+
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h6>Tip #8</h6>
+<h2>Automate your <b>workspace</b></h2>
+<p>Open your text editor or IDE</p>
+<p>Start Gulp or Grunt 'Watch'</p>
+<p>Run git status or git pull</p>
+<p>Start Vagrant / VVV </p>
+</section>
+
+<section class="bespoke-slide">
+<p>$ start project turbo.dev</p>
+<pre class="language-php"><code>#pseudocode
+	cd ~/vvv/www/turbo.dev
+	run start.sh script
+	cd ~/vvv/www/my-repo-dir
+	git pull
+	cd ~/vvv/www/my-theme-dir
+	open theme folder in sublime
+	gulp watch
+	vagrant up
+	open http://turbo.dev
+</code></pre>
+<a href="http://aaronrutley.com/automating-my-development-workspace/">http://aaronrutley.com/automating-my-development-workspace/</a>
+</section>
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h6>Tip #9</h6>
+<h2>Save time with a <b>Task Runner</b></h2>
+<p>Grunt or Glup</p>
+<p>Complie Sass with LiveReload</p>
+<p>Concatenate and minify CSS &amp; JS</p>
+<p>Generate sprites and compress images </p>
+</section>
+
+<section class="bespoke-slide">
+		<p>My current <b>gulp</b> setup</p>
+		<img src="images/gulp-1.png" width="100%" height="auto" />
+</section>
+
+
+<section data-bespoke-state="green" class="light bespoke-slide" >
+<h6>Tip #10</h6>
+<h2>Use <b>Alfred Workflows </b></h2>
+<p>Quick access to Dash Docs &amp; Gist's</p>
+<p>Convert Colours HEX to RGB</p>
+<p>Easily find font awesome icons</p>
+<p></p>
+
+</section>
+
+<section class="bespoke-slide">
+		<p>Alfred <b>workdlows</b></p>
+		<img src="images/alfred-1.png" width="100%" height="auto" />
+		<a href="http://aaronrutley.com/improve-your-website-development-productivity-with-alfred/">
+		http://aaronrutley.com/?p=2589</a>
+</section>
+
+
+
+
+<section class="bespoke-slide bespoke-inactive">
+<h1>Thank you!</h1>
+<p><a href="http://www.aaronrutley.com">www.aaronrutley.com</a></p>
+<img src="images/profile.jpg" class="avatar avatar--small">
+</section>
+
+<div class="bespoke-progress-parent"><div class="bespoke-progress-bar" ></div></div>
+</article>
+<script src="js/scripts.js"></script>
+</body></html>
