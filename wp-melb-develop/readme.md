@@ -1,5 +1,5 @@
-## WP Workflow Tips
+## WP Core Dev
 
-WordPress workflow tips, lightning talk for the July 2015 Melbourne Dev Meetup.
+WordPress core dev tips, lightning talk for the October 2015 Melbourne Dev Meetup.
 
 www.aaronrutley.com
