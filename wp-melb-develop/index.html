@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>WordPress core contrib</title>
+	<title>wp-melb-develop</title>
 	<link href="css/styles.css" rel="stylesheet"  type="text/css">
 </head>
 <body>
@@ -15,7 +15,7 @@
 		<img class="bg-image" src="images/1.jpeg" />
 		<div class="slide__content">
 			<h1>Setting up a <b>WordPress</b> site </h1>
-			<p>so you can contribue code to WordPress core</b></p>
+			<p>so you can contribute code to WordPress core</b></p>
 			<p><a href="https://twitter.com/aaronrutley">@aaronrutley</a></p>
 			<img src="images/profile.jpg" class="avatar ">
 			<p><i>(use arrows to navigate)</i>
@@ -224,12 +224,6 @@ jQuery(document).ready(function(){
 		timeout: 0
 	});
 
-	// progress on doc ready, get th slide totals and calc a width
-	// slidetotal = $( "div.slide" ).length;
-	// var width = 1 / slidetotal;
-	// var percentage = width * 100 + '%';
-	// $(".progress-bar__item").css("width", percentage);
-
 	// on cycle next update percentage (minus one to skip the first slide)
 	 $('.slide-container').on( 'cycle-before', function( event, opts ) {
 		var total = opts.slideCount -1;
@@ -245,10 +239,8 @@ jQuery(document).ready(function(){
 $(document.documentElement).keyup(function (event) {
    if (event.keyCode == 37) {
 	   $('.slide-container').cycle('prev');
-	   //console.log('prev');
    } else if (event.keyCode == 39) {
 	   $('.slide-container').cycle('next');
-	   //console.log('next');
 	}
 });
 </script>
