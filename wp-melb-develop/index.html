@@ -21,15 +21,27 @@
 		</div>
 	</div>
 
+	<div class="slide">
+		<img class="bg-image" src="images/6.jpeg" />
+		<div class="slide__content">
+			<h2>This talk is for WP developers that</h1>
+			<ol>
+				<li>Create themes or plugins locally</li>
+				<li>Use SVN or Git on the command line</li>
+				<li>Want to learn how to contribute to Core</li>
+			</ol>
+		</div>
+	</div>
+
 
 	<div class="slide">
 		<img class="bg-image" src="images/2.jpeg" />
 		<div class="slide__content">
-			<h1>3 ways to setup a dev site</h1>
+			<h2>3 different options for setting up a dev site</h1>
 			<ol>
-				<li>Simple Setup with SVN</li>
-				<li>Advanced Setup with Git and Grunt</li>
-				<li>Setup with VVV</li>
+				<li>Simple Setup (SVN)</li>
+				<li>Advanced Setup (Git and Grunt)</li>
+				<li>VVV Setup (SVN and Grunt)</li>
 			</ol>
 		</div>
 	</div>
@@ -37,7 +49,7 @@
 	<div class="slide slide--blue">
 		<img class="bg-image" src="images/3.jpeg" />
 		<div class="slide__content">
-			<h6>Simple Setup Step #1</h6>
+			<h6>Simple: Step #1</h6>
 			<h2>SVN Checkout WordPress trunk</h2>
 			<pre>svn co https://core.svn.wordpress.org/trunk/ your-dir-here</pre>
 		</div>
@@ -46,7 +58,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/4.jpeg" />
 		<div class="slide__content">
-			<h6>Simple Setup Step #2</h6>
+			<h6>Simple: Step #2</h6>
 			<h2>Install WordPress</h2>
 			<img src="images/trunk.png"/>
 		</div>
@@ -55,7 +67,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/5.jpeg" />
 		<div class="slide__content">
-			<h6>Simple Setup Step #3</h6>
+			<h6>Simple: Step #3</h6>
 			<p>Edit some files, then create a patch</p>
 			<pre>svn diff > my-patch-name.patch</pre>
 		</div>
@@ -64,7 +76,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/6.jpeg" />
 		<div class="slide__content">
-			<h6>Simple SVN & MAMP Setup</h6>
+			<h6>Simple: Step #4</h6>
 			<p>Review your patch</p>
 			<img src="images/patch.png"/>
 		</div>
@@ -73,7 +85,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/7.jpeg" />
 		<div class="slide__content">
-			<h6>Advanced Setup: Step #1</h6>
+			<h6>Advanced: Step #1</h6>
 			<h2>Install all the things</h2>
 			<p><a href="https://nodejs.org/en/" target="_blank">Node.js</a></p>
 			<p><a href="https://www.npmjs.com/" target="_blank">npm</a></p>
@@ -84,7 +96,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/8.jpeg" />
 		<div class="slide__content">
-			<h6>Advanced Setup: Step #2</h6>
+			<h6>Advanced: Step #2</h6>
 			<h2>Git clone the latest files from WordPres.org</h2>
 			<pre>$ git clone git://develop.git.wordpress.org/ your-dir</pre>
 		</div>
@@ -93,7 +105,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/1.jpeg" />
 		<div class="slide__content">
-			<h6>Advanced Setup: Step #3 </h6>
+			<h6>Advanced: Step #3 </h6>
 				<h2>Install node modules</h2>
 				<pre>$ npm install</pre>
 		</div>
@@ -102,7 +114,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/2.jpeg" />
 		<div class="slide__content">
-			<h6>Advanced Setup: Step #4</h6>
+			<h6>Advanced: Step #4</h6>
 			<h2>Build WordPress core</h2>
 			<pre>$ grunt</pre>
 		</div>
@@ -111,7 +123,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/3.jpeg" />
 		<div class="slide__content">
-			<h6>Advanced Setup: Step #5</h6>
+			<h6>Advanced: Step #5</h6>
 			<img src="images/build-screenshot.png" />
 		</div>
 	</div>
@@ -119,18 +131,17 @@
 	<div class="slide">
 		<img class="bg-image" src="images/4.jpeg" />
 		<div class="slide__content">
-			<h6>Advanced Setup: Step #6</h6>
+			<h6>Advanced: Step #6</h6>
 			<p>Install WordPress </p>
 			<img src="images/install-screen.png" />
-			<p><i>You want to work with the /build/ dir, and remember to move your wp-config file up one dir.</i></p>
 		</div>
 	</div>
 
 	<div class="slide">
 		<img class="bg-image" src="images/5.jpeg" />
 		<div class="slide__content">
-			<h6>Advanced Setup: Step #7</h6>
-			<p>Edit some files in the /src/ dir, run grunt then svn diff</p>
+			<h6>Advanced: Step #7</h6>
+			<p>Edit some files in the /src/ dir, run <span class="code">grunt</span> then <span class="code">git diff</span></p>
 			<img src="images/git-diff.png" />
 		</div>
 	</div>
@@ -139,7 +150,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/6.jpeg" />
 		<div class="slide__content">
-			<h6>VVV Setup: Step #1</h6>
+			<h6>VVV  Step #1</h6>
 			<h2>Install all the things</h2>
 			<p><a href="https://www.vagrantup.com/" target="_blank">Vagrant</a></p>
 			<p><a href="https://www.virtualbox.org/" target="_blank">Virtual Box</a></p>
@@ -150,7 +161,7 @@
 	<div class="slide">
 		<img class="bg-image" src="images/7.jpeg" />
 		<div class="slide__content">
-			<h6>VVV Setup: Step #2</h6>
+			<h6>VVV  Step #2</h6>
 			<p>After installing you get: </p>
 			<p><a href="http://local.wordpress-trunk.dev" target="_blank">http://local.wordpress-trunk.dev</a></p>
 			<p><a href="http://src.wordpress-develop.dev" target="_blank">http://src.wordpress-develop.dev</a></p>
@@ -161,8 +172,8 @@
 	<div class="slide">
 		<img class="bg-image" src="images/8.jpeg" />
 		<div class="slide__content">
-			<h6>VVV Setup: Step #3</h6>
-			<p>Eidt some files in the /src/ dir, run grunt then git diff</p>
+			<h6>VVV  Step #3</h6>
+			<p>Edit some files in the /src/ dir, run <span class="code">grunt</span> then <span class="code">svn diff</span></p>
 			<img src="images/svn-diff.png"/>
 		</div>
 	</div>

@@ -92,14 +92,14 @@ h1 {
 	line-height: 1.2;
 	font-size: 82px;
 }
-h2 {font-size: 42px;}
+h2 {font-size: 48px;}
 h3 {font-size: 24px;}
 h4 {font-size: 24px;}
 h5 {font-size: 24px;}
-h6 {font-size: 16px; font-weight: 700;}
+h6 {font-size: 18px; font-weight: 400;}
 
 p {
-	font-size: 30px;
+	font-size: 32px;
     margin: 0 100px;
 }
 
@@ -121,7 +121,7 @@ ol {
 li {
     margin-bottom: 12px;
 	text-align: left;
-	font-size: 25px;
+	font-size: 30px;
 }
 
 a {
@@ -210,4 +210,12 @@ a {
     -webkit-border-radius: 120px;
     border-radius: 120px;
 	margin-top:20px;
+}
+
+span.code {
+	background:#000;
+	padding:5px 10px;
+	font-family: Consolas,Monaco,'Andale Mono',monospace;
+	border-radius: 5px;
+	font-size:25px;
 }
