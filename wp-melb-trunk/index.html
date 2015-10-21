@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WordPress Trunk</title>
+	<link href="css/styles.css" rel="stylesheet"  type="text/css">
+</head>
+<body>
+
+<section class="slide-container">
+
+	<div class="slide">
+		<img class="bg-image" src="images/trunk-2.jpg" />
+		<div class="slide__content">
+			<h1>Getting setup with VVV </h1>
+			<p>so you can work on <b>WordPress Trunk</b></p>
+			<p><a href="https://twitter.com/aaronrutley">@aaronrutley</a></p>
+			<img src="images/profile.jpg" class="avatar ">
+		</div>
+	</div>
+
+	<div class="slide slide--light">
+		<img class="bg-image" src="images/1.jpeg" />
+		<div class="slide__content">
+			<h1>What is WordPress <b>Trunk</b> ?</h1>
+			<p>WordPress trunk is the most recent version of WordPress, it’s actively developed for the next release of WordPress. </p>
+		</div>
+	</div>
+
+	<div class="slide">
+		<img class="bg-image" src="images/2.jpeg" />
+		<div class="slide__content">
+			<h1>How do I get a copy of WordPress trunk ? </h1>
+
+			<ol>
+				<li>Checkout the latest files from SVN:
+					<pre class="language-php"><code>$ svn co http://svn.automattic.com/wordpress/trunk/ your-dir</code></pre>
+				</li>
+				<li>Setup a database (with MAMP or similar) </li>
+				<li>Install WordPress as usual </li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="slide slide--light">
+		<img class="bg-image" src="images/3.jpeg" />
+		<div class="slide__content">
+			<h1>What is Vagrant ? </h1>
+			<p><strong>Vagrant</strong> allows you to create and configure lightweight, reproducible, and portable development environments. </p>
+		</div>
+	</div>
+
+	<div class="slide">
+		<img class="bg-image" src="images/4.jpeg" />
+		<div class="slide__content">
+			<h1>What is VVV ? </h1>
+			<p><strong>Varying Vagrant Vagrants</strong> is a Vagrant configuration focused on WordPress development.</p>
+		</div>
+	</div>
+
+	<div class="slide slide--light">
+		<img class="bg-image" src="images/5.jpeg" />
+		<div class="slide__content">
+			<h1>Why use VVV ?</h1>
+			<ul>
+				<li>It comes with the /develop branch </li>
+				<li>It comes with /trunk </li>
+				<li>It’s ideal for lots of small sites (MAMP replacement) </li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slide">
+		<img class="bg-image" src="images/6.jpeg" />
+		<div class="slide__content">
+			<h1>How to setup VVV ?</h1>
+			<ol>
+				<li>Install Vagrant</li>
+				<li>Install Virtual Box</li>
+				<li>Clone VVV</li>
+				<pre class="language-php"><code>$ git clone https://github.com/Varying-Vagrant-Vagrants/VVV.git your-dir</code></pre>
+
+
+				<li>vagrant up</li>
+			</ol>
+			<p>https://github.com/Varying-Vagrant-Vagrants/VVV</p>
+		</div>
+	</div>
+
+
+	<div class="slide slide--light">
+		<img class="bg-image" src="images/7.jpeg" />
+		<div class="slide__content">
+			<h1>Videos from WordPress.tv</h1>
+			<ul>
+				<li>http://wordpress.tv/2015/10/12/hans-helge-burger-boost-your-development-with-vagrant/</li>
+				<li>http://wordpress.tv/2015/07/13/gaurav-pareek-better-wordpress-development-with-vagrant/</li>
+				<li>http://wordpress.tv/2015/05/24/brad-parbs-powerful-local-development-environments-with-vagrant-and-friends/</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slide">
+		<img class="bg-image" src="images/8.jpeg" />
+		<div class="slide__content">
+			<h1>Thank you!</h1>
+			<h3><a href="https://twitter.com/aaronrutley">@aaronrutley</a></h3>
+		</div>
+	</div>
+
+</section>
+
+
+<div class="progress-bar">
+	<div class="progress-bar__item">
+	</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
+<script>
+
+jQuery(document).ready(function(){
+
+	$('.slide-container-2').cycle({
+		speed:  '1200',
+		slides: '> div',
+		fx: 'scrollHorz',
+		allowWrap: false,
+		log: false,
+		timeout: 0
+	});
+
+	// progress on doc ready, get th slide totals and calc a width
+	// slidetotal = $( "div.slide" ).length;
+	// var width = 1 / slidetotal;
+	// var percentage = width * 100 + '%';
+	// $(".progress-bar__item").css("width", percentage);
+
+	// on cycle next update percentage (minus one to skip the first slide)
+	 $('.slide-container').on( 'cycle-before', function( event, opts ) {
+		var total = opts.slideCount -1;
+		var current = opts.slideNum - 1;
+		var width = current / total;
+		var percentage = width * 100 + '%';
+		$(".progress-bar__item").css("width", percentage);
+	});
+
+});
+
+
+$(document.documentElement).keyup(function (event) {
+   if (event.keyCode == 37) {
+	   $('.slide-container').cycle('prev');
+	   //console.log('prev');
+   } else if (event.keyCode == 39) {
+	   $('.slide-container').cycle('next');
+	   //console.log('next');
+	}
+});
+</script>
+</body>
+</html>
