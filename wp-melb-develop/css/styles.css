@@ -24,7 +24,7 @@ font-style:bold;font-weight:600;
 }
 
 
-code[class*=language-],pre[class*=language-] {
+pre {
     color: #fff;
     direction: ltr;
     font-family: Consolas,Monaco,'Andale Mono',monospace;
@@ -35,41 +35,22 @@ code[class*=language-],pre[class*=language-] {
     word-break: normal;
     -moz-tab-size: 4;
     -o-tab-size: 4;
-    tab-size: 4;
+    tab-size: 0;
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
-    hyphens: none
-}
-
-:not(pre)>code[class*=language-],pre[class*=language-] {
-    background: #141414
-}
-
-pre[class*=language-] {
-    border-radius: .5em;
+    hyphens: none;
+	background:#141414;
+	border-radius: .5em;
     border: .3em solid #545454;
-    box-shadow: 1px 1px .5em #000 inset;
-    margin: .5em 0;
-    overflow: auto;
-    padding: 1em
-}
 
-code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection {
-    text-shadow: none;
-    background: hsla(0,0%,93%,.15)
-}
-
-code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection {
-    text-shadow: none;
-    background: hsla(0,0%,93%,.15)
-}
-
-:not(pre)>code[class*=language-] {
-    border-radius: .3em;
-    border: .13em solid #545454;
-    box-shadow: 1px 1px .3em -.1em #000 inset;
-    padding: .15em .2em .05em
+	padding: 26px!important;
+	margin:0;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 0!important;
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important
 }
 
 * {
@@ -80,18 +61,8 @@ code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=
     padding: 0
 }
 
-pre {
-    padding: 26px!important;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    border: 0!important;
-    -webkit-box-shadow: none!important;
-    box-shadow: none!important
-}
 
-pre span {
-    text-shadow: none!important
-}
+
 
 body {
     background: #303030;
@@ -125,11 +96,15 @@ h2 {font-size: 42px;}
 h3 {font-size: 24px;}
 h4 {font-size: 24px;}
 h5 {font-size: 24px;}
-h6 {font-size: 24px;}
+h6 {font-size: 16px; font-weight: 700;}
 
 p {
 	font-size: 30px;
     margin: 0 100px;
+}
+
+p i {
+	font-size: 18px;
 }
 
 ul {
@@ -150,7 +125,7 @@ li {
 }
 
 a {
-	color:#00f3a5;
+	color:#3498db;
     text-decoration: none
 }
 
@@ -182,9 +157,8 @@ a {
   	align-items: center;
   	justify-content: center;
 	position: relative;
-	background:#222;
+	background:#2c3e50;
 	padding-bottom: 50px;
-
 }
 
 .slide--light {
@@ -197,6 +171,11 @@ a {
 	z-index: 1;
 }
 
+.slide__content img {
+	max-width: 800px;
+	max-height: 500px;
+}
+
 .progress-bar {
 	position: fixed;
 	bottom:0;
@@ -206,7 +185,7 @@ a {
 }
 
 .progress-bar__item {
-	background:#00c284;
+	background:#3498db;
 	height: 5px;
 	width: 0px;
 	transition: all 300ms ease-in;
