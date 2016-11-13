@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>wp-melb-rest-api</title>
+	<link href="css/styles.css" rel="stylesheet"  type="text/css">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/wp-melb.png">
+</head>
+<body>
+
+<section class="slide-container">
+
+	<div class="slide">
+		<div class="slide__content">
+			<img src="images/logo.jpg" />
+		</div>
+	</div>
+
+	<div class="slide">
+		<img class="bg-image" src="images/1.jpeg" />
+		<div class="slide__content">
+			<p>Getting started with the</p>
+			<h1><strong>WP REST API</strong></h1>
+			<p><a href="https://twitter.com/aaronrutley">- Aaron Rutley</a></p>
+			<img src="images/profile.jpg" class="avatar ">
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>Tonights talk:</h1>
+			<p>Introduce the REST API and explain some practical ways you could get started using it in your client projects!</p>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<img src="images/rest-api-banner.jpg" />
+			<ul>
+				<li>Alternative way to communicate with the WordPress database</li>
+				<li>Content endpoints are coming in WordPress 4.7</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>The Acronyms</h1>
+			<ul>
+				<li>JSON - JavaScript Object Notation</li>
+				<li>REST - Representational State Transfer</li>
+				<li>API - Application Programming Interface</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>What is an endpoint ? </h2>
+			<pre>http://aaronrutley.com/wp-json/wp/v2/posts/</pre>
+			<img src="images/screen-1.png" />
+		</div>
+	</div>
+
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>Default Endpoints</h2>
+			<ul>
+				<li>Media: </li>
+				<li>Settings: </li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>Excluded from the API by default</h2>
+			<ul>
+				<li>Custom Post Types</li>
+				<li>Custom Meta</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>Custom Endpoints </h2>
+			<pre>http://aaronrutley.com/wp-json/my-endpoint/</pre>
+		</div>
+	</div>
+
+
+	<div class="slide">
+		<div class="slide__content">
+			<h6>How can I use it ? </h6>
+			<h2>1. Loading content</h6>
+		</div>
+	</div>
+
+
+	<div class="slide">
+		<div class="slide__content">
+			<h6>How can I use it ? </h6>
+			<h2>2. Filtering</h6>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h6>How can I use it ? </h6>
+			<h2>3. Live Search</h6>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h6>How can I use it ? </h6>
+			<h2>4. Custom Dashboards / Admin Screens</h6>
+		</div>
+	</div>
+
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>Why is this a big deal ? </h1>
+			<ul>
+				<li>With authentication you can create/update/delete (Custom Dashboards)</li>
+				<li>It can be used in the WP Dashboard (Quick Draft, Quick Edit etc)</li>
+				<li>Single Page JS Applications (React, Angular, Vue)</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="slide">
+		<div class="slide__content">
+			<h6>Tips for working with the REST API </h6>
+			<h2>Chrome with the JSON View Extension </h6>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h6>Tips for working with the REST API </h6>
+			<h2>2. WordPress RES API Console Plugin </h6>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h6>Tips for working with the REST API </h6>
+			<h2>3. Paw app or insomnia app </h6>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h6>Tips for working with the REST API </h6>
+			<h2>4. Postman app or browser extension </h6>
+		</div>
+	</div>
+
+
+	<div class="slide">
+		<div class="slide__content">
+			<h1>Resources</h1>
+			<ul>
+				<li><a href="http://v2.wp-api.org/">WP REST API Docs</a>
+				<li><a href="http://wordpress.tv/2016/11/07/evan-mullins-wp-api-what-is-it-good-for-absolutely-everything/" target="_blank">Evan Mullins WP API - What is it good for (WordPress.tv)</a></li>
+				<li><a href="http://codepen.io/ahmadawais/pen/aORdVV" target="_blank">Get posts with jQuery (CodePen)</a></li>
+				<li><a href="http://codepen.io/krogsgard/pen/pEYxEG/" target="_blank">WordPress Posts in Vue.js (CodePen)</a></li>
+				<li><a href="https://wpengine.com/blog/wordpress-rest-api-free-ebook/" target="_blank">Ultimate guide to the REST API (ebook) </a></li>
+				<li><a href="https://wordpress.org/plugins/rest-api-console/">Rest API Console (WordPress Plugin)</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h1>Thank you!</h1>
+			<h3><a href="http://aaronrutley.com">aaronrutley.com</a></h3>
+		</div>
+	</div>
+
+</section>
+
+
+<div class="progress-bar">
+	<div class="progress-bar__item">
+	</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
+<script>
+
+jQuery(document).ready(function(){
+
+	//setup the slide container
+	$('.slide-container').cycle({
+		speed:  '200',
+		slides: '> div',
+		fx: 'scrollHorz',
+		allowWrap: false,
+		log: false,
+		timeout: 0
+	});
+
+	// on cycle next update percentage (minus one to skip the first slide)
+	 $('.slide-container').on( 'cycle-before', function( event, opts ) {
+		var total = opts.slideCount -1;
+		var current = opts.slideNum - 1;
+		var width = current / total;
+		var percentage = width * 100 + '%';
+		$(".progress-bar__item").css("width", percentage);
+	});
+
+});
+
+// use left and right arrows for naviation
+$(document.documentElement).keyup(function (event) {
+   if (event.keyCode == 37) {
+	   $('.slide-container').cycle('prev');
+   } else if (event.keyCode == 39) {
+	   $('.slide-container').cycle('next');
+	}
+});
+
+</script>
+
+<!-- livereload - temp -->
+<script src="http://localhost:35729/livereload.js"></script>
+
+</body>
+</html>
