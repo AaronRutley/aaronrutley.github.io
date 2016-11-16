@@ -18,9 +18,9 @@
 		</div>
 	</div>
 
-	<div class="slide">
+	<div class="slide ">
 		<img class="bg-image" src="images/1.jpeg" />
-		<div class="slide__content">
+		<div class="slide__content slide__content--center">
 			<p>Getting started with the</p>
 			<h1><strong>WP REST API</strong></h1>
 			<p><a href="https://twitter.com/aaronrutley">- Aaron Rutley</a></p>
@@ -31,7 +31,7 @@
 	<div class="slide">
 		<div class="slide__content">
 			<h2>Tonights talk:</h1>
-			<p>Introduce the REST API and explain some practical ways you could get started using it in your client projects!</p>
+			<p>Introduce the REST API and explain some practical ways you could get started using it in your projects!</p>
 		</div>
 	</div>
 
@@ -40,149 +40,164 @@
 			<img src="images/rest-api-banner.jpg" />
 			<ul>
 				<li>Alternative way to communicate with the WordPress database</li>
-				<li>Content endpoints are coming in WordPress 4.7</li>
+				<li>Coming in WordPress 4.7 (Early December 2016)</li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="slide">
 		<div class="slide__content">
-			<h2>The Acronyms</h1>
+			<h2>Acronyms</h1>
 			<ul>
 				<li>JSON - JavaScript Object Notation</li>
 				<li>REST - Representational State Transfer</li>
 				<li>API - Application Programming Interface</li>
 			</ul>
+			<p>Developer friendly, well strcutured way to talk to the WP database.</p>
 		</div>
 	</div>
 
 
 	<div class="slide">
 		<div class="slide__content">
-			<h2>What is an endpoint ? </h2>
-			<pre>http://aaronrutley.com/wp-json/wp/v2/posts/</pre>
-			<img src="images/screen-1.png" />
+			<h2>The REST API is all about endpoints</h2>
+			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/</pre>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+
+			<h2>Getting data from the REST API</h2>
+
+			<p>To GET a collection of posts</p>
+			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/posts</pre>
+
+			<p>To GET an individual post </p>
+			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/posts/38</pre>
+
+			<p>To GET page two of posts</p>
+			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/posts?per_page=10&amp;page=2</pre>
+
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+
+			<h2>Posting data to the REST API</h2>
+
+			<p>POST data to create a new post</p>
+			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/posts</pre>
+
+			<p>PUT data to update a post</p>
+			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/posts/38</pre>
+
+			<p>* Authentication Required </p>
 		</div>
 	</div>
 
 
 	<div class="slide">
 		<div class="slide__content">
-			<h2>Default Endpoints</h2>
+			<h2>Default Content Endpoints</h2>
 			<ul>
-				<li>Media: </li>
-				<li>Settings: </li>
+				<li>Posts/Pages/Media</li>
+				<li>Comments </li>
+				<li>Terms</li>
+				<li>Users</li>
+				<li>Meta</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>Custom Post Type Endpoints</h2>
+			<pre>'show_in_rest' => true,</pre>
+			<p>To GET a collection of Projects</p>
+			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/projects</pre>
+			<p>To GET a customised collection of Projects</p>
+			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/projects?orderby=title&amporder=asc</pre>
+		</div>
+	</div> -->
+
+	<!-- <div class="slide">
+		<div class="slide__content">
+			<h2>Simple ways to use the REST API</h2>
+			<ul>
+				<li>Load More Projects</li>
+				<li>Category Filtering </li>
+				<li>Loading data from an external site</li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="slide">
 		<div class="slide__content">
-			<h2>Excluded from the API by default</h2>
+			<h2>Demo Time</h2>
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>Tips for getting started with the REST API </h2>
+		</div>
+	</div>
+	<div class="slide">
+		<div class="slide__content">
+			<p>1. Use chrome with the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa">JSON Formatter Extension</a> </p>
+			<img src="images/json-formatter.png" />
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<p>2. Use the WordPress <a href="https://wordpress.org/plugins/rest-api-console/">REST API Console Plugin</a></p>
+			<img src="images/wp-api-console.png" />
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<p>3. Paw <a href="https://paw.cloud/">https://paw.cloud/</a></p>
+			<img src="images/paw.png" />
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<p>4. Postman app <a href="https://www.getpostman.com">https://www.getpostman.com</a></p>
+			<img src="images/postman.png" />
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<p>5. Read the docs <a href="http://v2.wp-api.org/reference/">http://v2.wp-api.org/reference/</a></p>
+			<img src="images/api-docs.png" />
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<h2>To recap - why do I need this ? </h1>
 			<ul>
-				<li>Custom Post Types</li>
-				<li>Custom Meta</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="slide">
-		<div class="slide__content">
-			<h2>Custom Endpoints </h2>
-			<pre>http://aaronrutley.com/wp-json/my-endpoint/</pre>
-		</div>
-	</div>
-
-
-	<div class="slide">
-		<div class="slide__content">
-			<h6>How can I use it ? </h6>
-			<h2>1. Loading content</h6>
-		</div>
-	</div>
-
-
-	<div class="slide">
-		<div class="slide__content">
-			<h6>How can I use it ? </h6>
-			<h2>2. Filtering</h6>
-		</div>
-	</div>
-
-	<div class="slide">
-		<div class="slide__content">
-			<h6>How can I use it ? </h6>
-			<h2>3. Live Search</h6>
-		</div>
-	</div>
-
-	<div class="slide">
-		<div class="slide__content">
-			<h6>How can I use it ? </h6>
-			<h2>4. Custom Dashboards / Admin Screens</h6>
-		</div>
-	</div>
-
-
-	<div class="slide">
-		<div class="slide__content">
-			<h2>Why is this a big deal ? </h1>
-			<ul>
+				<li>It can be used right now to enchance existing projects!</li>
+				<li>It can be used in core/plugins to improve the WP Dashboard (Quick Draft)</li>
 				<li>With authentication you can create/update/delete (Custom Dashboards)</li>
-				<li>It can be used in the WP Dashboard (Quick Draft, Quick Edit etc)</li>
-				<li>Single Page JS Applications (React, Angular, Vue)</li>
-			</ul>
-		</div>
-	</div>
-
-
-	<div class="slide">
-		<div class="slide__content">
-			<h6>Tips for working with the REST API </h6>
-			<h2>1. Chrome with the JSON View Extension </h6>
-		</div>
-	</div>
-
-	<div class="slide">
-		<div class="slide__content">
-			<h6>Tips for working with the REST API </h6>
-			<h2>2. WordPress RES API Console Plugin </h6>
-		</div>
-	</div>
-
-	<div class="slide">
-		<div class="slide__content">
-			<h6>Tips for working with the REST API </h6>
-			<h2>3. Paw app or insomnia app </h6>
-		</div>
-	</div>
-
-	<div class="slide">
-		<div class="slide__content">
-			<h6>Tips for working with the REST API </h6>
-			<h2>4. Postman app or browser extension </h6>
-		</div>
-	</div>
-
-
-	<div class="slide">
-		<div class="slide__content">
-			<h1>Resources</h1>
-			<ul>
-				<li><a href="http://v2.wp-api.org/">WP REST API Docs</a>
-				<li><a href="http://wordpress.tv/2016/11/07/evan-mullins-wp-api-what-is-it-good-for-absolutely-everything/" target="_blank">Evan Mullins WP API - What is it good for (WordPress.tv)</a></li>
-				<li><a href="http://codepen.io/ahmadawais/pen/aORdVV" target="_blank">Get posts with jQuery (CodePen)</a></li>
-				<li><a href="http://codepen.io/krogsgard/pen/pEYxEG/" target="_blank">WordPress Posts in Vue.js (CodePen)</a></li>
-				<li><a href="https://wpengine.com/blog/wordpress-rest-api-free-ebook/" target="_blank">Ultimate guide to the REST API (ebook) </a></li>
-				<li><a href="https://wordpress.org/plugins/rest-api-console/">Rest API Console (WordPress Plugin)</a></li>
+				<li>It can be Used to create Single Page Applications (React, Angular, Vue)</li>
+				<li>We can now use WP as Headless CMS (Data store for an iOS App)</li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="slide">
 		<div class="slide__content">
-			<h1>Thank you!</h1>
-			<h3><a href="http://aaronrutley.com">aaronrutley.com</a></h3>
+			<h1 style="text-align:center">Thank you!</h1>
+			<h3 style="text-align:center"><a href="http://twitter.com/aaronrutley"> @aaronrutley</a></h3>
+			<h3 style="text-align:center"><a href="http://aaronrutley.com"> www.aaronrutley.com</a></h3>
 		</div>
 	</div>
 
