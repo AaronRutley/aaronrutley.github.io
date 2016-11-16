@@ -18,8 +18,7 @@
 		</div>
 	</div>
 
-	<div class="slide ">
-		<img class="bg-image" src="images/1.jpeg" />
+	<div class="slide">
 		<div class="slide__content slide__content--center">
 			<p>Getting started with the</p>
 			<h1><strong>WP REST API</strong></h1>
@@ -93,7 +92,7 @@
 			<p>PUT data to update a post</p>
 			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/posts/38</pre>
 
-			<p>* Authentication Required </p>
+			<p><i>* Authentication Required </i></p>
 		</div>
 	</div>
 
@@ -115,15 +114,16 @@
 	<div class="slide">
 		<div class="slide__content">
 			<h2>Custom Post Type Endpoints</h2>
+			<p>When registering a CPT</p>
 			<pre>'show_in_rest' => true,</pre>
-			<p>To GET a collection of Projects</p>
+			<p>To GET a collection of 'projects'</p>
 			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/projects</pre>
-			<p>To GET a customised collection of Projects</p>
+			<p>To GET a customised collection of 'projects'</p>
 			<pre>http://wpmelb-demo.dev/wp-json/wp/v2/projects?orderby=title&amporder=asc</pre>
 		</div>
 	</div> -->
 
-	<!-- <div class="slide">
+	<div class="slide">
 		<div class="slide__content">
 			<h2>Simple ways to use the REST API</h2>
 			<ul>
@@ -147,44 +147,51 @@
 	</div>
 	<div class="slide">
 		<div class="slide__content">
-			<p>1. Use chrome with the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa">JSON Formatter Extension</a> </p>
+			<p>Download &amp; Install the <a href="https://wordpress.org/plugins/rest-api/">WP REST API plugin</a> </p>
+			<img src="images/wp-rest-api-org.png" />
+		</div>
+	</div>
+
+	<div class="slide">
+		<div class="slide__content">
+			<p>Use chrome with the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa">JSON Formatter Extension</a> </p>
 			<img src="images/json-formatter.png" />
 		</div>
 	</div>
 
 	<div class="slide">
 		<div class="slide__content">
-			<p>2. Use the WordPress <a href="https://wordpress.org/plugins/rest-api-console/">REST API Console Plugin</a></p>
+			<p>Use the WordPress <a href="https://wordpress.org/plugins/rest-api-console/">REST API Console Plugin</a></p>
 			<img src="images/wp-api-console.png" />
 		</div>
 	</div>
 
 	<div class="slide">
 		<div class="slide__content">
-			<p>3. Paw <a href="https://paw.cloud/">https://paw.cloud/</a></p>
+			<p>Checkout Paw <a href="https://paw.cloud/">https://paw.cloud/</a></p>
 			<img src="images/paw.png" />
 		</div>
 	</div>
 
 	<div class="slide">
 		<div class="slide__content">
-			<p>4. Postman app <a href="https://www.getpostman.com">https://www.getpostman.com</a></p>
+			<p>Try Postman app <a href="https://www.getpostman.com">https://www.getpostman.com</a></p>
 			<img src="images/postman.png" />
 		</div>
 	</div>
 
 	<div class="slide">
 		<div class="slide__content">
-			<p>5. Read the docs <a href="http://v2.wp-api.org/reference/">http://v2.wp-api.org/reference/</a></p>
+			<p>Read the docs <a href="http://v2.wp-api.org/reference/">http://v2.wp-api.org/reference/</a></p>
 			<img src="images/api-docs.png" />
 		</div>
 	</div>
 
 	<div class="slide">
 		<div class="slide__content">
-			<h2>To recap - why do I need this ? </h1>
+			<h2>To recap - why is this a big deal ? </h1>
 			<ul>
-				<li>It can be used right now to enchance existing projects!</li>
+				<li>You can use it right now to improve existing projects!</li>
 				<li>It can be used in core/plugins to improve the WP Dashboard (Quick Draft)</li>
 				<li>With authentication you can create/update/delete (Custom Dashboards)</li>
 				<li>It can be Used to create Single Page Applications (React, Angular, Vue)</li>
@@ -247,8 +254,6 @@ $(document.documentElement).keyup(function (event) {
 
 </script>
 
-<!-- livereload - temp -->
-<script src="http://localhost:35729/livereload.js"></script>
 
 </body>
 </html>
